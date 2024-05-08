@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,3 +31,6 @@ Route::get('usuarios', function(){
 Route::get('venta', function(){
     return view('venta');
 });
+Route::post('/registrar-venta', [App\Http\Controllers\VentaController::class, 'registrarVenta'])->name('registrar-venta');
+
+

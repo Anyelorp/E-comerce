@@ -80,7 +80,7 @@
         </form>
 
         <!-- Botón de volver al menú -->
-        <a href="http://127.0.0.1:8000/icomers" class="btn btn-volver">Volver al Menú Principal</a>
+        <a href="http://127.0.0.1:8000/icomers" class="btn btn-volver">Volver</a>
     </div>
 
     <!-- Bootstrap JS (opcional, para funcionalidades adicionales) -->

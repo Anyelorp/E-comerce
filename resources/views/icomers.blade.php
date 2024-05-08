@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>ARMAS EVOLUTIVAS FREE FIRE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Agrega la biblioteca de Font Awesome -->
   <style>
     /* Estilos generales */
     html, body {
+      background: url(https://th.bing.com/th/id/R.ab28fa023d3d11f7562b50d19775eb78?rik=D5zoS8vwaiGgRg&pid=ImgRaw&r=0);
       height: 100%;
       margin: 0;
       padding: 0;
@@ -19,63 +21,41 @@
       justify-content: space-between; /* Espacio entre el encabezado y el pie de página */
       position: relative; /* Establece un contexto de posición para los elementos absolutos */
       min-height: 100vh; /* Garantiza que el cuerpo al menos ocupe toda la altura de la ventana */
+      background-color: #f0f0f0; /* Color de fondo */
     }
-  
 
     /* Estilos para el header */
     header {
-      background-color: #0096d2; /* Mostaza oscuro */
+      background: url(https://th.bing.com/th/id/R.ab28fa023d3d11f7562b50d19775eb78?rik=D5zoS8vwaiGgRg&pid=ImgRaw&r=0); /* Color de fondo del encabezado */
       color: #fff;
-      text-align: right;
-      padding: 50px;
+      text-align: center;
+      padding: 20px 0;
       width: 100%; /* Ocupa todo el ancho */
-      position: fixed; /* Mantiene fijo el encabezado */
+      position: fixed; /* Fija el encabezado en la parte superior */
       top: 0; /* Fijado arriba */
     }
 
+    header p {
+      font-size: 24px;
+      margin: 0;
+    }
+
     header nav {
-      margin-top: 5px;
-      text-align: center;
+      margin-top: 10px;
     }
 
     header a {
-      color: #4033d3;
+      color: #fff;
       text-decoration: none;
-      margin-right: 10px;
+      margin: 0 10px;
+      font-size: 18px;
     }
-    #imagen-fondo {
-  position: absolute; /* Posicionamiento relativo al encabezado */
-  top: 0;
-  left: 0;
-  width: 100%; /* Ocupa todo el ancho del encabezado */
-  height: 100%; /* Ocupa toda la altura del encabezado */
-  background-image: url("https://images8.alphacoders.com/476/thumb-1920-476725.jpg"); /* Reemplaza con la URL de tu imagen */
-  background-size: cover; /* Cubre todo el fondo */
-  background-position: center; /* Posición central */
-  background-repeat: no-repeat; /* No repetir la imagen */
-  z-index: -1; /* Coloca la imagen detrás del contenido del encabezado */
-}
 
     /* Estilos para el contenido */
     main {
       text-align: center;
-      padding: 20px;
-      margin-top: 150px; /* Ajusta el margen superior para evitar que el contenido se superponga con el encabezado */
-    }
-
-    footer nav {
-      margin-top: 5px;
-    }
-
-    footer a {
-      color: #fff;
-      text-decoration: none;
-      margin-right: 10px;
-    }
-
-    /* Estilos para los títulos */
-    h1 {
-      color: #0096d2; /* Fucsia */
+      padding: 100px 20px 20px; /* Ajusta el padding para el contenido */
+      width: 100%;
     }
 
     /* Estilos para las tarjetas */
@@ -84,7 +64,6 @@
       flex-wrap: wrap; /* Ajusta el flujo de las tarjetas a varias líneas */
       justify-content: center; /* Centra las tarjetas horizontalmente */
       gap: 20px;
-      padding: 0 20px; /* Añade un espacio a los lados del contenedor */
     }
 
     .card {
@@ -93,6 +72,7 @@
       overflow: hidden;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease; /* Agrega una transición al transform */
+      background-color: #fff; /* Color de fondo de la tarjeta */
     }
 
     .card:hover {
@@ -106,17 +86,25 @@
 
     .card-content {
       padding: 20px;
-      text-align: center;
+    }
+
+    .card h3 {
+      color: #0096d2; /* Color del título */
+      margin-top: 0; /* Elimina el margen superior del título */
+    }
+
+    .card p {
+      margin: 10px 0; /* Ajusta el margen del párrafo */
     }
 
     .button {
-      display: block;
-      margin-top: 20px;
-      background-color: #0092d2; /* Color del encabezado */
-      color: white;
+      display: inline-block;
+      background-color: #0096d2; /* Color del botón */
+      color: #fff;
       text-decoration: none;
       padding: 10px 20px;
       border-radius: 5px;
+      transition: background-color 0.3s ease; /* Transición del color de fondo */
     }
 
     .button:hover {
@@ -125,54 +113,153 @@
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="http://127.0.0.1:8000/productor">PRODUCTOR</a>
-      <a href="">USUARIOS</a>
-      <a href="">VENTA</a>
-    
-    </nav>
-  </header>
 
-  <main>
-    <div class="card-container">
-      <div class="card">
-        <a href="http://127.0.0.1:8000/productor">
-          <img src="https://th.bing.com/th/id/OIP.PSLE2QJmG7F07ETWQYSwiQAAAA?w=334&h=260&rs=1&pid=ImgDetMain">
-        </a>
-        <div class="card-content">
-          <h3>PRODUCTOR</h3>
-          <p>PRODUCTOR RESEPCIONISTA</p>
-        </div>
-      </div>
+<header>
+  <nav style="display: flex; justify-content: flex-end;">
+    <a href="http://127.0.0.1:8000/productor"><i class="fas fa-user" style="color: #FF5733;"></i> <span style="color: orange;">PRODUCTOR</span></a>
+    <a href="http://127.0.0.1:8000/usuarios"><i class="fas fa-users" style="color: #FF5733;"></i> <span style="color: orange;">USUARIOS</span></a>
+    <a href="http://127.0.0.1:8000/venta"><i class="fas fa-shopping-cart" style="color: #FF5733;"></i> <span style="color: orange;">VENTA</span></a>
+  </nav>
+  <div style="text-align: center;">
+    <p><i class="fas fa-fire" style="color: #FF5733;"></i> <span style="color: orange;">ARMAS EVOLUTIVAS</span></p>
+  </div>
+</header>
 
-      <div class="card">
-        <a href="http://127.0.0.1:8000/usuarios">
-          <img src="https://th.bing.com/th/id/R.761e9e0ef56331314035244b5b8d3cb1?rik=rVkBrdM%2bAFz4gQ&pid=ImgRaw&r=0">
-        </a>
-        <div class="card-content">
-          <h3>USUARIOS</h3>
-          <p>REGISTROS DE USUARIOS</p>
-        </div>
+<main>
+  <div class="card-container">
+    <div class="card">
+      <a href="http://127.0.0.1:8000/venta?producto=MP40&precio=400">
+        <img src="https://i.ytimg.com/vi/wFfXJikQods/maxresdefault.jpg">
+      </a>
+      <div class="card-content">
+        <h3>MP40</h3>
+        <p>400.$</p>
+        <a href="http://127.0.0.1:8000/venta?producto=MP40&precio=400" class="button">Agregar al carrito</a>
       </div>
-
-      <div class="card">
-        <a href="http://127.0.0.1:8000/venta">
-          <img src="https://cdn-icons-png.flaticon.com/512/8279/8279972.png">
-        </a>
-        <div class="card-content">
-          <h3></h3>
-          <p>VENTAS</p>
-        </div>
-      </div>
-      <a href="http://127.0.0.1:8000/" class="button">VOLVER AL INICIO</a>
     </div>
-  </main>
-  
-  <footer>
-    <nav>
-      <!-- Coloca aquí tus enlaces de pie de página si los tienes -->
-    </nav>
-  </footer>
+    <div class="card">
+      <a href="http://127.0.0.1:8000/venta?producto=FN%20SCAR&precio=500">
+        <img src="https://th.bing.com/th/id/OIP.rCAjV3TMHy1iRcsTEdg2LQHaEK?rs=1&pid=ImgDetMain">
+      </a>
+      <div class="card-content">
+        <h3>FN SCAR</h3>
+        <p>500.$</p>
+        <a href="http://127.0.0.1:8000/venta?producto=FN%20SCAR&precio=500" class="button">Agregar al carrito</a>
+      </div>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="https://th.bing.com/th/id/R.ce1d01c5144a5cff0d1a89e6e31d8646?rik=n6v7hKcOrQqWMg&pid=ImgRaw&r=0">
+      </a>
+      <div class="card-content">
+        <h3>AK 47</h3>
+        <p>600.$</p>
+        <a href="http://127.0.0.1:8000/venta?producto=AK 47&precio=600" class="button">Agregar al carrito</a>
+      </div>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="https://th.bing.com/th/id/OIP.7DIYyLkJdO37nnN0dkYqWgHaEK?rs=1&pid=ImgDetMain">
+      </a>
+      <div class="card-content">
+        <h3>UMP</h3>
+        <p>400.$</p>
+        <a href="http://127.0.0.1:8000/venta?producto=UMP&precio=400" class="button">Agregar al carrito</a>
+      </div>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="https://th.bing.com/th/id/OIP.A77M1SJdF3LxgyTqiSl7dgHaEK?rs=1&pid=ImgDetMain">
+      </a>
+      <div class="card-content">
+        <h3>FAMAS</h3>
+        <p>400.$</p>
+        <a href="http://127.0.0.1:8000/venta?producto=FAMAS&precio=400" class="button">Agregar al carrito</a>
+      </div>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="https://staticg.sportskeeda.com/editor/2022/11/7b51e-16697315082155-1920.jpg">
+      </a>
+      <div class="card-content">
+        <h3>AC80</h3>
+        <p>400.$</p>
+        <a href="http://127.0.0.1:8000/venta?producto=AC80&precio=400" class="button">Agregar al carrito</a>
+      </div>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="https://i.ytimg.com/vi/osevyMkOavw/hqdefault.jpg">
+      </a>
+      <div class="card-content">
+        <h3>M1014</h3>
+        <p>900.$</p>
+        <a href="http://127.0.0.1:8000/venta?producto=M1014&precio=900" class="button">Agregar al carrito</a>
+      </div>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="https://staticg.sportskeeda.com/editor/2021/10/76278-16339232006176-800.jpg">
+      </a>
+      <div class="card-content">
+        <h3>WOODPECKER</h3>
+        <p>200.$</p>
+        <a href="http://127.0.0.1:8000/venta?producto=WOODPECKER&precio=200" class="button">Agregar al carrito</a>
+      </div>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="https://i.ytimg.com/vi/lMVfG19Kcso/maxresdefault.jpg">
+      </a>
+      <div class="card-content">
+        <h3>M60</h3>
+        <p>300.$</p>
+        <a href="http://127.0.0.1:8000/venta?producto=M60&precio=300" class="button">Agregar al carrito</a>
+      </div>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="https://i.ytimg.com/vi/RRMiHOcU7FQ/maxresdefault.jpg">
+      </a>
+      <div class="card-content">
+        <h3>AWM</h3>
+        <p>400.$</p>
+        <a href="http://127.0.0.1:8000/venta?producto=AWM&precio=400" class="button">Agregar al carrito</a>
+      </div>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="https://i.ytimg.com/vi/IM1TzLesGMA/maxresdefault.jpg">
+      </a>
+      <div class="card-content">
+        <h3>P90</h3>
+        <p>400.$</p>
+        <a href="http://127.0.0.1:8000/venta?producto=P90&precio=400" class="button">Agregar al carrito</a>
+      </div>
+    </div>
+    <div class="card">
+      <a href="">
+        <img src="https://i.ytimg.com/vi/-vLZ6YbqF4A/maxresdefault.jpg">
+      </a>
+      <div class="card-content">
+        <h3>VECTOR</h3>
+        <p>500.$</p>
+        <a href="http://127.0.0.1:8000/venta?producto=VECTOR&precio=400" class="button">Agregar al carrito</a>
+      </div>
+    </div>
+  </div>
+  <a href="http://127.0.0.1:8000/" class="button">VOLVER AL INICIO</a>
+</main>
+<footer>
+  <nav>
+    <!-- Script para agregar productos al carrito -->
+    <script>
+      function agregarAlCarrito(producto, precio) {
+        // Aquí puedes implementar la lógica para agregar el producto al carrito
+        alert("Producto agregado al carrito: " + producto + " - Precio: $" + precio);
+      }
+    </script>
+  </nav>
+</footer>
 </body>
 </html>
